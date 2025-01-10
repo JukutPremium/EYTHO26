@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Belleza&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .scroll-circle {
+            clip-path: circle(6% at 50% 0);
+        }
+    </style>
+</head>
+<body class="bg-red min-h-screen">
+    <div class="sm:hidden md:inline">
+        <div class="cursor"></div>
+    </div>
+    <!-- Navbar Start-->
+    <nav class="fixed w-full bg-transparent backdrop-blur-sm z-50 px-6 py-4">
+        <div class="mx-auto flex justify-between items-center">
+            <div class="nav-link font-['Poppins'] text-xl font-semibold text-white">
+                <div class="word">
+                    <span class="word-text">EZZY HOTEL</span>
+                </div>
+            </div>
+            <div class="nav-link font-['Poppins'] text-xl font-semibold text-white">
+                <div class="word">
+                    <span class="word-text">MENU</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End-->
+
+    <!-- Content Start -->
+    <div class="h-screen flex flex-col items-center justify-center relative bg-[#455947]">
+        <h1 class="font-['Belleza'] text-9xl opacity-0 interactive text-white" id="hero-text">Welcome to Your Heaven</h1>
+
+        <div class="absolute bottom-0 w-full h-32 scroll-circle bg-[#C78853] flex items-start justify-center pt-4 rotate-180">
+            <p class="font-['Poppins'] text-sm tracking-wider rotate-180 text-white">SCROLL</p>
+        </div>
+    </div>
+    <!-- Content End -->
+
+    <script src="js/cursor.js"></script>
+    <script src="js/navbar.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Hero Animation
+        gsap.to("#hero-text", {
+            opacity: 1,
+            y: 0,
+            duration: 1.5,
+            ease: "power4.out",
+            delay: 0.5
+        });
+
+        // Scroll indicator animation
+        gsap.to(".scroll-circle", {
+            scrollTrigger: {
+                trigger: "main",
+                start: "top top",
+                end: "+=100",
+                scrub: 1
+            },
+            opacity: 0,
+            y: 50
+        });
+    </script>
+</body>
+</html>
