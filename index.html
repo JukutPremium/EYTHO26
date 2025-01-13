@@ -76,7 +76,22 @@
     <section class="justify-center items-center flex h-[100vh]" id="home">
         <img src="assets/icon.png" alt="Icon" class="">
     </section>
-    <script src="js/navBar.js"></script>
+    <!-- <script src="js/navBar.js"></script> -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+            });
+        });
+    </script>
 </body>
 
 </html>
