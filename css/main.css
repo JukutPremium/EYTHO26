@@ -1,3 +1,15 @@
+
+
+body {
+    overflow-x: hidden;
+}
+.hero-bg-image {
+    background-image: url('../assets/hero-bg-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
 @keyframes underline-grow {
     from {
         width: 0;
@@ -38,4 +50,9 @@
 #mobile-menu.open {
     max-height: 100vh;
     opacity: 1;
+}
+
+.icon-ey {
+    transform: translateY(-2rem);
+    
 }
