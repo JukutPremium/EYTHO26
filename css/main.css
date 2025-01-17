@@ -1,15 +1,67 @@
-
+html {
+    overflow-x: hidden;
+}
 
 body {
     overflow-x: hidden;
 }
 .hero-bg-image {
-    background-image: url('../assets/hero-bg-image.jpg');
+    background-image: url('../assets/iniheroimg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
 }
+
+.jkt-logo-rounded {
+    border-radius:0px 0px 15px 0;
+}
+/*  */
+.home-logo{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+}
+
+.home-logo .outer-home-logo{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.outer-home-logo .inner-home-logo{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+}
+
+.home-logo img{
+    width: 30px;
+    height: 30px;
+}
+
+.area-home-logo{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 15px;
+    background-color: #FFFBF5;
+    border-bottom-right-radius: 20px;
+}
+
+.area-home-logo .img-home-logo{
+    width: 120px;
+    height: fit-content;
+}
+
+.outer-home-logo .rounded-img-home{
+    transform: rotate(180deg);
+}
+
+
 @keyframes underline-grow {
     from {
         width: 0;
