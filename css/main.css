@@ -6,7 +6,7 @@ body {
     overflow-x: hidden;
 }
 .hero-bg-image {
-    background-image: url('../assets/iniheroimg.jpg');
+    background-image: url('../assets/bg-hero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
