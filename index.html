@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EYTHO 2026 - Student Tech Olympics</title>
-    <link rel="icon" href="assets/icon.png" type="image/gif/png">
+    <link rel="icon" href="assets/compres/icon.png" type="image/gif/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -21,11 +21,11 @@
                 <div class="outer-home-logo">
                     <div class="inner-home-logo">
                         <div class="area-home-logo">
-                            <img src="assets/logo26.png" alt="" class="img-home-logo md:h-16 h-12">
+                            <img src="assets/compres/logo2026.png" alt="" class="img-home-logo md:h-16 h-12">
                         </div>
-                        <img src="assets/rounded.png" class="rounded-img-home" alt="">
+                        <img src="assets/compres/rounded.png" class="rounded-img-home" alt="">
                     </div>
-                    <img src="assets/rounded.png" class="rounded-img-home" alt="">
+                    <img src="assets/compres/rounded.png" class="rounded-img-home" alt="">
                 </div>
             </div>
 
@@ -36,37 +36,37 @@
                         <h1>Close</h1>
                     </div>
                 </div>
-                <img src="assets/menu.png" alt="">
+                <img src="assets/compres/menu.png" alt="">
             </div>
             <nav class="nav-menu ">
                 <div class="nav-link">
                     <div class="inner-nav-link">
-                        <a class="active" href="">Home</a>
-                        <a class="active" href="">Home</a>
+                        <a class="active" href="#home">Home</a>
+                        <a class="active" href="#home">Home</a>
                     </div>
                 </div>
                 <div class="nav-link">
                     <div class="inner-nav-link">
-                        <a href="">About Us</a>
-                        <a href="">About Us</a>
+                        <a href="#about">About Us</a>
+                        <a href="#about">About Us</a>
                     </div>
                 </div>
                 <div class="nav-link">
                     <div class="inner-nav-link">
-                        <a href="">Competition</a>
-                        <a href="">Competition</a>
+                        <a href="#compe">Competition</a>
+                        <a href="#compe">Competition</a>
                     </div>
                 </div>
                 <div class="nav-link">
                     <div class="inner-nav-link">
-                        <a href="">Contact Us</a>
-                        <a href="">Contact Us</a>
+                        <a href="#contact">Contact Us</a>
+                        <a href="#contact">Contact Us</a>
                     </div>
                 </div>
                 <div class="nav-link">
                     <div class="inner-nav-link">
-                        <a href="">Register</a>
-                        <a href="">Register</a>
+                        <a href="#register">Register</a>
+                        <a href="#register">Register</a>
                     </div>
                 </div>
                 <div class="nav-line"></div>
@@ -90,10 +90,10 @@
                     </p>
                 </div>
                 <div class="relative group cursor-pointer w-full">
-                    <img src="assets/Frame 2.png" alt=""
+                    <img src="assets/compres/Frame 2.png" alt=""
                         class="w-full h-24 object-cover rounded-lg border-4 bordered">
                     <div class="absolute inset-0 flex items-center justify-center">
-                        <div
+                        <div id="playButtonMobile"
                             class="w-14 h-14 bg-white bg-opacity-80 rounded-lg flex items-center justify-center transition-transform transform group-hover:scale-110">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" viewBox="0 0 24 24"
                                 fill="currentColor">
@@ -116,9 +116,9 @@
             </div>
 
             <div class="relative group cursor-pointer hidden md:block">
-                <img src="assets/Frame 2.png" alt="" class="w-[550px] h-[220px] rounded-lg border-4 bordered">
+                <img src="assets/compres/Frame 2.png" alt="" class="w-[550px] h-[220px] rounded-lg border-4 bordered">
                 <div class="absolute inset-0 flex items-center justify-center">
-                    <div
+                    <div id="playButtonDesktop"
                         class="w-14 h-14 bg-white bg-opacity-80 rounded-lg flex items-center justify-center transition-transform transform group-hover:scale-110">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M8 5v14l11-7z" />
@@ -127,15 +127,31 @@
                 </div>
             </div>
         </div>
+        <div id="videoModal" class="fixed inset-0 w-screen h-screen bg-[#2F2F2F] hidden z-50 ">
+            <div class="w-full h-full items-center justify-center flex flex-col gap-2">
+                <div class="w-[80%] h-[76%] rounded-lg items-center justify-center flex">
+                    <iframe id="videoFrame" class="md:h-full md:w-full w-[560px] h-[315px]"
+                        src="https://www.youtube.com/embed/mHlgwQdv3ig?si=VY3kInQFoX-9HEy8" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="bg-[#ffffff] w-[80%] h-1 rounded-lg items-center justify-center flex"></div>
+                <div class="bg-[#ffffff] py-2 px-10 rounded-lg items-center justify-center flex">
+                    <button id="closeModal">BACK</button>
+                </div>
+            </div>
+        </div>
+
         <!-- Desktop Layout -->
     </section>
     <!-- Hero -->
     <!-- About -->
-    <section class="p-5 md:p-3 h-full overflow-hidden md:h-screen">
+    <section class="p-5 md:p-3 h-full overflow-hidden md:h-screen" id="about">
         <div class="flex flex-col md:flex-row gap-12 justify-center items-center h-full">
 
             <div class="w-full md:w-1/3 h-full hidden md:flex items-center">
-                <img src="assets/bg-mantap.jpg" alt="Student working"
+                <img src="assets/compres/departement/DSC03263 1.png" alt="Student working"
                     class="w-full h-[75vh] object-cover rounded-2xl shadow-xl hover:scale-[1.02] transition-all duration-500" />
             </div>
 
@@ -198,28 +214,28 @@
                 <div class="flex flex-col mb-10">
                     <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 ">
                         <div class="md:col-span-4 h-[250px] sm:h-[300px] md:h-[404px] w-full">
-                            <img src="assets/kat-3.jpeg" alt="Gallery image"
-                                class="gallery-image object-cover hover:grayscale-0 grayscale transition-all duration-300 ease-in-out mx-auto w-full h-full">
+                            <img src="assets/compres/kat-2.jpeg" alt="Gallery image"
+                                class="gallery-image object-cover rounded-lg mx-auto w-full h-full">
                         </div>
                         <div class="md:col-span-8 h-[250px] sm:h-[300px] md:h-[404px] w-full">
-                            <img src="assets/kat-3.jpeg" alt="Gallery image"
-                                class="gallery-image object-cover hover:grayscale-0 grayscale transition-all duration-300 ease-in-out mx-auto w-full h-full">
+                            <img src="assets/compres/kat-3.jpeg" alt="Gallery image"
+                                class="gallery-image object-cover rounded-lg mx-auto w-full h-full">
                         </div>
                         <div class="md:col-span-8 h-[250px] sm:h-[300px] md:h-[404px] w-full">
-                            <img src="assets/kat-3.jpeg" alt="Gallery image"
-                                class="gallery-image object-cover hover:grayscale-0 grayscale transition-all duration-300 ease-in-out mx-auto w-full h-full">
+                            <img src="assets/compres/kat-8.jpg" alt="Gallery image"
+                                class="gallery-image object-cover rounded-lg mx-auto w-full h-full">
                         </div>
                         <div class="md:col-span-4 h-[250px] sm:h-[300px] md:h-[404px] w-full">
-                            <img src="assets/kat-3.jpeg" alt="Gallery image"
-                                class="gallery-image object-cover hover:grayscale-0 grayscale transition-all duration-300 ease-in-out mx-auto w-full h-full">
+                            <img src="assets/compres/kat-5.jpeg" alt="Gallery image"
+                                class="gallery-image object-cover rounded-lg mx-auto w-full h-full">
                         </div>
                         <div class="md:col-span-4 h-[250px] sm:h-[300px] md:h-[404px] w-full">
-                            <img src="assets/kat-3.jpeg" alt="Gallery image"
-                                class="gallery-image object-cover hover:grayscale-0 grayscale transition-all duration-300 ease-in-out mx-auto w-full h-full">
+                            <img src="assets/compres/kat-4.jpeg" alt="Gallery image"
+                                class="gallery-image object-cover rounded-lg mx-auto w-full h-full">
                         </div>
                         <div class="md:col-span-8 h-[250px] sm:h-[300px] md:h-[404px] w-full">
-                            <img src="assets/kat-3.jpeg" alt="Gallery image"
-                                class="gallery-image object-cover hover:grayscale-0 grayscale transition-all duration-300 ease-in-out mx-auto w-full h-full">
+                            <img src="assets/compres/kat-7.jpeg" alt="Gallery image"
+                                class="gallery-image object-cover rounded-lg mx-auto w-full h-full">
                         </div>
                     </div>
                 </div>
@@ -231,7 +247,7 @@
     <!-- <section class="w-full h-full md:h-screen p-4 md:p-14 flex items-center">
         <div class="flex flex-col md:flex-row gap-8 md:gap-12 w-full">
             <div class="w-full md:w-1/2">
-                <img src="assets/bg-mantap.jpg" alt="Student working on laptop"
+                <img src="assets/compres/bg-mantap.jpg" alt="Student working on laptop"
                     class="w-full h-[300px] md:h-full object-cover rounded-lg">
             </div>
 
@@ -363,14 +379,15 @@
     <div class="list-kategori">
         <div class="img-list-kategori">
             <div class="inner-img-list-kategori rounded-lg">
-                <img src="assets/kat-1.jpeg" class="kategori-home1 preview-list-kategori active" alt="">
-                <img src="assets/kat-2.jpeg" class="kategori-home2 preview-list-kategori" alt="">
-                <img src="assets/kat-3.jpeg" class="kategori-home3 preview-list-kategori" alt="">
-                <img src="assets/kat-4.jpeg" class="kategori-home4 preview-list-kategori" alt="">
-                <img src="assets/kat-5.jpeg" class="kategori-home5 preview-list-kategori" alt="">
-                <img src="assets/kat-6.jpeg" class="kategori-home6 preview-list-kategori" alt="">
-                <img src="assets/kat-7.jpeg" class="kategori-home7 preview-list-kategori" alt="">
-                <img src="assets/kat-8.jpg" class="kategori-home8 preview-list-kategori" alt="">
+                <img src="assets/compres/departement/img9.png" class="kategori-home1 preview-list-kategori active"
+                    alt="">
+                <img src="assets/compres/departement/img4.png" class="kategori-home2 preview-list-kategori" alt="">
+                <img src="assets/compres/departement/img8.png" class="kategori-home3 preview-list-kategori" alt="">
+                <img src="assets/compres/departement/img6.png" class="kategori-home4 preview-list-kategori" alt="">
+                <img src="assets/compres/departement/img1.png" class="kategori-home5 preview-list-kategori" alt="">
+                <img src="assets/compres/departement/img15.png" class="kategori-home6 preview-list-kategori" alt="">
+                <img src="assets/compres/departement/img17.png" class="kategori-home7 preview-list-kategori" alt="">
+                <img src="assets/compres/departement/img20.png" class="kategori-home8 preview-list-kategori" alt="">
             </div>
         </div>
         <div class="area-header-list-kategori">
@@ -388,7 +405,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="assets/up-right-arrow.png" alt="">
+                <img src="assets/compres/up-right-arrow.png" alt="">
             </a>
             <a href="" kategori-data="kategori2" class="box-header-list-kategori">
                 <div class="hover-header-list-kategori">
@@ -404,7 +421,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="assets/up-right-arrow.png" alt="">
+                <img src="assets/compres/up-right-arrow.png" alt="">
             </a>
             <a href="" kategori-data="kategori3" class="box-header-list-kategori">
                 <div class="hover-header-list-kategori">
@@ -420,7 +437,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="assets/up-right-arrow.png" alt="">
+                <img src="assets/compres/up-right-arrow.png" alt="">
             </a>
             <a href="" kategori-data="kategori4" class="box-header-list-kategori">
                 <div class="hover-header-list-kategori">
@@ -436,7 +453,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="assets/up-right-arrow.png" alt="">
+                <img src="assets/compres/up-right-arrow.png" alt="">
             </a>
             <a href="" kategori-data="kategori5" class="box-header-list-kategori">
                 <div class="hover-header-list-kategori">
@@ -452,7 +469,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="assets/up-right-arrow.png" alt="">
+                <img src="assets/compres/up-right-arrow.png" alt="">
             </a>
             <a href="" kategori-data="kategori6" class="box-header-list-kategori">
                 <div class="hover-header-list-kategori">
@@ -468,7 +485,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="assets/up-right-arrow.png" alt="">
+                <img src="assets/compres/up-right-arrow.png" alt="">
             </a>
             <a href="" kategori-data="kategori7" class="box-header-list-kategori">
                 <div class="hover-header-list-kategori">
@@ -484,7 +501,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="assets/up-right-arrow.png" alt="">
+                <img src="assets/compres/up-right-arrow.png" alt="">
             </a>
             <a href="" kategori-data="kategori8" class="box-header-list-kategori">
                 <div class="hover-header-list-kategori">
@@ -500,7 +517,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="assets/up-right-arrow.png" alt="">
+                <img src="assets/compres/up-right-arrow.png" alt="">
             </a>
         </div>
     </div>
@@ -508,29 +525,34 @@
     <div class="box"></div>
     <div class="box"></div> -->
 
+
     <!-- Footer -->
-    <footer class="w-full h-full md:min-h-screen bg-black relative overflow-hidden">
+    <footer class="bg-black full">
+
         <div class="py-20 ">
-            <div class="running-text whitespace-nowrap  md:flex hidden">
-                <span class="text-[250px] font-bold text-[#FDF3E7] inline-block pr-8">EYTHO - ITS TIME TO SHOW YOUR
+            <div class="running-text whitespace-nowrap  ">
+                <span class="md:text-[250px] text-7xl font-bold text-[#FDF3E7] inline-block pr-8">EYTHO - ITS TIME TO
+                    SHOW YOUR
                     STARS -</span>
-                <span class="text-[250px] font-bold text-[#FDF3E7] inline-block pr-8">EYTHO - ITS TIME TO SHOW YOUR
+                <span class="md:text-[250px] text-7xl font-bold text-[#FDF3E7] inline-block pr-8">EYTHO - ITS TIME TO
+                    SHOW YOUR
                     STARS -</span>
-                <span class="text-[250px] font-bold text-[#FDF3E7] inline-block pr-8">EYTHO - ITS TIME TO SHOW YOUR
+                <span class="md:text-[250px] text-7xl font-bold text-[#FDF3E7] inline-block pr-8">EYTHO - ITS TIME TO
+                    SHOW YOUR
                     STARS -</span>
-                <span class="text-[250px] font-bold text-[#FDF3E7] inline-block pr-8">EYTHO - ITS TIME TO SHOW YOUR
+                <span class="md:text-[250px] text-7xl font-bold text-[#FDF3E7] inline-block pr-8">EYTHO - ITS TIME TO
+                    SHOW YOUR
                     STARS -</span>
             </div>
         </div>
-
-        <div class="relative md:absolute bottom-0 w-full">
+        <div class="bottom-0 w-full">
             <div class="bg-[#FDF3E7] w-full rounded-t-[50px] p-8 md:p-16">
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                     <!-- Brand -->
                     <div class="md:col-span-2">
                         <div class="flex items-center gap-4 mb-8">
                             <div class="w-8 h-8">
-                                <img src="assets/icon.png" alt="" class="w-full h-full">
+                                <img src="assets/compres/icon.png" alt="" class="w-full h-full">
                             </div>
                             <h2 class="text-3xl font-bold">EYTHO</h2>
                         </div>
@@ -608,6 +630,43 @@
     <script src="plugin/gsap.js"></script>
     <script src="plugin/ScrollTrigger.js"></script>
     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const modal = document.getElementById('videoModal');
+            const clsbtn = document.getElementById('closeModal');
+            const videoFrame = document.getElementById('videoFrame');
+            const playButtonMobile = document.getElementById('playButtonMobile');
+            const playButtonDesktop = document.getElementById('playButtonDesktop');
+            const closeButton = document.getElementById('closeModal');
+
+            function showModal() {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function hideModal() {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+                videoFrame.src = videoFrame.src;
+            }
+
+            playButtonMobile.addEventListener('click', showModal);
+            playButtonDesktop.addEventListener('click', showModal);
+            closeButton.addEventListener('click', hideModal);
+
+            modal.addEventListener('click', function (e) {
+                if (e.target === modal) {
+                    hideModal();
+                }
+            });
+
+            function closeModal() {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+                videoFrame.src = videoFrame.src;
+            }
+            closeBtn.addEventListener('click', closeModal);
+        });
+        
         gsap.registerPlugin(ScrollTrigger);
         const lenis = new Lenis()
         lenis.on('scroll', (e) => {
@@ -658,7 +717,7 @@
                 kategoriHoreving++
                 $(this).addClass("active");
                 $(this).find("h6").addClass("active");
-                $(this).find("img").attr("src", "assets/up-right-arrow-wh.png");
+                $(this).find("img").attr("src", "assets/compres/up-right-arrow-wh.png");
                 $(this).find(".inner-text-header-list-kategori").addClass("active");
                 $(this).find("img").addClass("active");
                 $(".area-header-list-kategori").addClass("active");
@@ -701,7 +760,7 @@
             $(".box-header-list-kategori").mouseleave(function () {
                 $(this).removeClass("active");
                 $(this).find("h6").removeClass("active");
-                $(this).find("img").attr("src", "assets/up-right-arrow.png");
+                $(this).find("img").attr("src", "assets/compres/up-right-arrow.png");
                 $(this).find(".inner-text-header-list-kategori").removeClass("active");
                 $(this).find("img").removeClass("active");
             });

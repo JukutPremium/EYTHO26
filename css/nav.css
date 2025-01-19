@@ -436,6 +436,9 @@
     .hover-header-list-kategori .bottom-header-list-kategori {
       min-height: 40px;
     }
+    .nav-menu {
+        width: 90%;
+    }
   }
   
   @media screen and (max-width: 480px) {
