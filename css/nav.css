@@ -1,0 +1,472 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", serif;
+}
+
+.nav-btn{
+    width: fit-content;
+    height: fit-content;
+    /* background-color: #fff; */
+    padding: 16px 24px;
+    display: flex;
+    justify-content: end;
+    border-radius: 6px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 999;
+    background-color: #FFFBF5;
+    right: 20px;
+    top: 20px;
+    transition: 0.4s ease;
+}
+.nav-btn.active{
+    transition: 0.4s ease;
+    background-color: transparent;
+}
+
+.nav-btn img{
+    width: 16px;
+    height: 16px;
+    margin-left: 20px;
+}
+
+.nav-btn .outer-nav-btn{
+    width: fit-content;
+    height: 17px;
+    overflow-y: hidden;
+}
+
+.nav-btn .inner-nav-btn{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s ease;
+}
+
+.inner-nav-btn.active{
+    transform: translateY(-50%);
+    transition: 0.4s ease;
+}
+
+.inner-nav-btn h1{ 
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.nav-menu{
+    width: 350px;
+    height: fit-content;
+    background: linear-gradient(180deg,#FFFBF5 0,#e6e6e6 100%);
+    padding: 60px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    clip-path: inset(0 0 100% 0);
+    position: fixed;
+    z-index: 998;
+    right: 20px;
+    top: 20px;
+    border-radius: 10px;
+    transition: 0.4s ease;
+    
+}
+
+.nav-menu.active{
+    clip-path: inset(0 0 0 0);
+    transition: 0.4s ease;
+}
+
+.nav-menu .nav-link{
+    width: fit-content;
+    height: 30px;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
+.inner-nav-link a.active{
+    color: #000;
+}
+
+.nav-link .inner-nav-link{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s ease;
+}
+
+.inner-nav-link.active{
+    transition: 0.4s ease;
+    transform: translateY(-50%);
+}
+
+.inner-nav-link a{
+    width: fit-content;
+    height: fit-content;
+    font-size: 30px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.nav-menu .nav-line{
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+
+.nav-menu .social-nav{
+    width: 100%;
+    height: fit-content;
+    margin-top: 12px;
+    display: flex;
+}
+
+.social-nav a{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.home{
+    background-image: url(asset/Flambe-1-2048x1365.jpg);
+    background-size: cover;
+}
+
+.home-logo{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+}
+
+.home-logo .outer-home-logo{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.outer-home-logo .inner-home-logo{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+}
+
+.home-logo img{
+    width: 30px;
+    height: 30px;
+}
+
+.area-home-logo{
+    width: fit-content;
+    height: fit-content;
+    padding: 12px 24px;
+    background-color: #FFFBF5;
+    border-bottom-right-radius: 20px;
+}
+
+.area-home-logo .img-home-logo{
+    width: 120px;
+    height: fit-content;
+}
+
+.outer-home-logo .rounded-img-home{
+    transform: rotate(180deg);
+}
+
+.list-kategori{
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    padding: 80px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-kategori .img-list-kategori{
+    width: 29%;
+    height: fit-content;
+    aspect-ratio: 3/4;
+    position: sticky;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-list-kategori .inner-img-list-kategori{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner-img-list-kategori img{
+    z-index: 1;
+}
+
+.img-list-kategori .preview-list-kategori{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    clip-path: inset(100% 0 0 0);
+    transition: 0.5s cubic-bezier(.24,.43,.15,.97);
+    transform: scale(1.3);
+}
+
+.area-header-list-kategori{
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.preview-list-kategori.active{
+    transform: scale(1);
+    transition: 0.5s cubic-bezier(.24,.43,.15,.97);
+    clip-path: inset(0 0 0 0);
+}
+
+.area-header-list-kategori .box-header-list-kategori{
+    width: 100%;
+    height: fit-content;
+    padding: 30px 30px 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #000;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+.area-header-list-kategori .box-header-list-kategori:last-child{
+    border-bottom: 1px solid #000;
+}
+
+.box-header-list-kategori.active{
+    color: #fff;
+}
+
+.box-header-list-kategori h6.active{
+    transition: 0.4s cubic-bezier(.24,.43,.15,.97);
+    transform: translateX(20px);
+}
+
+.box-header-list-kategori::before{
+    background-color: #000;
+    content: "";
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: .4s cubic-bezier(.24,.43,.15,.97);
+}
+
+.outer-header-list-kategori{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.outer-header-list-kategori h6{
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 60px;
+    transition: 0.4s cubic-bezier(.24,.43,.15,.97);
+}
+
+.text-header-list-kategori{
+    height: 25px;
+    width: fit-content;
+    overflow: hidden;
+    display: flex;
+}
+
+.text-header-list-kategori .inner-text-header-list-kategori{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.inner-text-header-list-kategori.active{
+    transform: translateY(-52%);
+    transition: 0.4s ease;
+}
+
+.text-header-list-kategori h1{
+    font-size: 25px;
+    margin-bottom: 1px;
+    line-height: 100%;
+    font-weight: 500;
+}
+
+.area-header-list-kategori a img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    z-index: 2;
+    transition: 0.3s ease;
+}
+
+.area-header-list-kategori a img.active{
+    transform: rotate(45deg);
+    transition: 0.3s ease;
+}
+
+.box-header-list-kategori.list-hover-atas::before {
+    transform-origin: bottom;
+}
+
+.box-header-list-kategori.list-hover-bawah::before {
+    transform-origin: top;
+}
+
+.box-header-list-kategori.list-before-hover-atas::before {
+    transform-origin: bottom;
+}
+
+.box-header-list-kategori.transition-0s{
+    transition: 0s;
+}
+
+.box-header-list-kategori.list-before-hover-bawah::before {
+    transform-origin: top;
+}
+
+.box-header-list-kategori:hover:before{
+    transform: scaleY(1);
+}
+
+.hover-header-list-kategori{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hover-header-list-kategori .top-header-list-kategori, .hover-header-list-kategori .bottom-header-list-kategori{
+    width: 100%;
+    height: 50%;
+}
+
+.box{
+    width: 100%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+    .list-kategori {
+      flex-direction: column;
+      padding: 40px 20px;
+      min-height: auto;
+    }
+  
+    .list-kategori .img-list-kategori {
+      width: 100%;
+      aspect-ratio: 16/9;
+      position: relative;
+      top: 0;
+      margin-bottom: 40px;
+    }
+  
+    .area-header-list-kategori {
+      width: 100%;
+    }
+  
+    .box-header-list-kategori {
+      padding: 20px 15px 20px 0px;
+    }
+  
+    .outer-header-list-kategori h6 {
+      font-size: 16px;
+      margin-right: 30px;
+    }
+  
+    .text-header-list-kategori {
+      height: 20px;
+    }
+  
+    .text-header-list-kategori h1 {
+      font-size: 18px;
+    }
+  
+    .area-header-list-kategori a img {
+      width: 16px;
+      height: 16px;
+    }
+  
+    .box-header-list-kategori::before {
+      transition: .3s cubic-bezier(.24,.43,.15,.97);
+    }
+  
+    .img-list-kategori .preview-list-kategori {
+      transform: scale(1.1);
+    }
+  
+    .preview-list-kategori.active {
+      transform: scale(1);
+    }
+  
+    .hover-header-list-kategori .top-header-list-kategori,
+    .hover-header-list-kategori .bottom-header-list-kategori {
+      min-height: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .list-kategori {
+      padding: 30px 15px;
+    }
+  
+    .outer-header-list-kategori h6 {
+      font-size: 14px;
+      margin-right: 20px;
+    }
+  
+    .text-header-list-kategori h1 {
+      font-size: 16px;
+    }
+  
+    .box-header-list-kategori {
+      padding: 15px 10px 15px 0px;
+    }
+  }
+  
+  /* Optimize performance on mobile */
+  @media (hover: none) {
+    .box-header-list-kategori:hover::before {
+      transform: scaleY(0);
+    }
+    
+    .box-header-list-kategori:active::before {
+      transform: scaleY(1);
+    }
+  }
+
+
+  

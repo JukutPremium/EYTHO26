@@ -6,13 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EYTHO 2026 - Student Tech Olympics</title>
     <link rel="icon" href="assets/icon.png" type="image/gif/png">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 
 <body class="bg-[#FFFBF5] poppins">
@@ -31,16 +29,52 @@
                 </div>
             </div>
 
-            <button class="bg-[#FFFBF5] rounded-lg absolute right-10 top-5 px-6 py-4">
-                <div class="flex items-center justify-center gap-5 h-full">
-                    <p class="text-black font-medium">MENU</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
+            <div class="nav-btn ">
+                <div class="outer-nav-btn">
+                    <div class="inner-nav-btn">
+                        <h1>Menu</h1>
+                        <h1>Close</h1>
+                    </div>
                 </div>
-            </button>
+                <img src="assets/menu.png" alt="">
+            </div>
+            <nav class="nav-menu ">
+                <div class="nav-link">
+                    <div class="inner-nav-link">
+                        <a class="active" href="">Home</a>
+                        <a class="active" href="">Home</a>
+                    </div>
+                </div>
+                <div class="nav-link">
+                    <div class="inner-nav-link">
+                        <a href="">About Us</a>
+                        <a href="">About Us</a>
+                    </div>
+                </div>
+                <div class="nav-link">
+                    <div class="inner-nav-link">
+                        <a href="">Competition</a>
+                        <a href="">Competition</a>
+                    </div>
+                </div>
+                <div class="nav-link">
+                    <div class="inner-nav-link">
+                        <a href="">Contact Us</a>
+                        <a href="">Contact Us</a>
+                    </div>
+                </div>
+                <div class="nav-link">
+                    <div class="inner-nav-link">
+                        <a href="">Register</a>
+                        <a href="">Register</a>
+                    </div>
+                </div>
+                <div class="nav-line"></div>
+                <div class="social-nav">
+                    <a href="">Instagram</a>
+                    <a href="">Facebook</a>
+                </div>
+            </nav>
         </div>
 
         <div class="w-full h-full hero-bg-image rounded-lg bottom-0 md:flex md:items-end md:justify-between md:p-10">
@@ -56,7 +90,7 @@
                     </p>
                 </div>
                 <div class="relative group cursor-pointer w-full">
-                    <img src="assets/hero-bg-image.jpg" alt=""
+                    <img src="assets/Frame 2.png" alt=""
                         class="w-full h-24 object-cover rounded-lg border-4 bordered">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div
@@ -82,7 +116,7 @@
             </div>
 
             <div class="relative group cursor-pointer hidden md:block">
-                <img src="assets/hero-bg-image.jpg" alt="" class="w-[500px] rounded-lg border-4 bordered">
+                <img src="assets/Frame 2.png" alt="" class="w-[550px] h-[220px] rounded-lg border-4 bordered">
                 <div class="absolute inset-0 flex items-center justify-center">
                     <div
                         class="w-14 h-14 bg-white bg-opacity-80 rounded-lg flex items-center justify-center transition-transform transform group-hover:scale-110">
@@ -149,16 +183,52 @@
                 </div>
 
                 <button
-                    class="bg-black text-white py-3.5 px-10 rounded-xl font-medium hover:bg-gray-800 hover:-translate-y-0.5 transition-all duration-300">
+                    class="bg-black text-white py-3.5 px-10 rounded-lg font-medium hover:bg-gray-800 hover:-translate-y-0.5 transition-all duration-300">
                     REGISTER
                 </button>
             </div>
         </div>
     </section>
     <!-- About -->
-     
+    <section class="" id="gallery">
+        <div class="mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid gap-2.5 lg:pb-16 pb-10">
+            </div>
+            <div class="gallery">
+                <div class="flex flex-col mb-10">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 ">
+                        <div class="md:col-span-4 h-[250px] sm:h-[300px] md:h-[404px] w-full">
+                            <img src="assets/kat-3.jpeg" alt="Gallery image"
+                                class="gallery-image object-cover hover:grayscale-0 grayscale transition-all duration-300 ease-in-out mx-auto w-full h-full">
+                        </div>
+                        <div class="md:col-span-8 h-[250px] sm:h-[300px] md:h-[404px] w-full">
+                            <img src="assets/kat-3.jpeg" alt="Gallery image"
+                                class="gallery-image object-cover hover:grayscale-0 grayscale transition-all duration-300 ease-in-out mx-auto w-full h-full">
+                        </div>
+                        <div class="md:col-span-8 h-[250px] sm:h-[300px] md:h-[404px] w-full">
+                            <img src="assets/kat-3.jpeg" alt="Gallery image"
+                                class="gallery-image object-cover hover:grayscale-0 grayscale transition-all duration-300 ease-in-out mx-auto w-full h-full">
+                        </div>
+                        <div class="md:col-span-4 h-[250px] sm:h-[300px] md:h-[404px] w-full">
+                            <img src="assets/kat-3.jpeg" alt="Gallery image"
+                                class="gallery-image object-cover hover:grayscale-0 grayscale transition-all duration-300 ease-in-out mx-auto w-full h-full">
+                        </div>
+                        <div class="md:col-span-4 h-[250px] sm:h-[300px] md:h-[404px] w-full">
+                            <img src="assets/kat-3.jpeg" alt="Gallery image"
+                                class="gallery-image object-cover hover:grayscale-0 grayscale transition-all duration-300 ease-in-out mx-auto w-full h-full">
+                        </div>
+                        <div class="md:col-span-8 h-[250px] sm:h-[300px] md:h-[404px] w-full">
+                            <img src="assets/kat-3.jpeg" alt="Gallery image"
+                                class="gallery-image object-cover hover:grayscale-0 grayscale transition-all duration-300 ease-in-out mx-auto w-full h-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Category -->
-    <section class="w-full h-full md:h-screen p-4 md:p-14 flex items-center">
+    <!-- <section class="w-full h-full md:h-screen p-4 md:p-14 flex items-center">
         <div class="flex flex-col md:flex-row gap-8 md:gap-12 w-full">
             <div class="w-full md:w-1/2">
                 <img src="assets/bg-mantap.jpg" alt="Student working on laptop"
@@ -287,8 +357,156 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Category -->
+
+    <div class="list-kategori">
+        <div class="img-list-kategori">
+            <div class="inner-img-list-kategori rounded-lg">
+                <img src="assets/kat-1.jpeg" class="kategori-home1 preview-list-kategori active" alt="">
+                <img src="assets/kat-2.jpeg" class="kategori-home2 preview-list-kategori" alt="">
+                <img src="assets/kat-3.jpeg" class="kategori-home3 preview-list-kategori" alt="">
+                <img src="assets/kat-4.jpeg" class="kategori-home4 preview-list-kategori" alt="">
+                <img src="assets/kat-5.jpeg" class="kategori-home5 preview-list-kategori" alt="">
+                <img src="assets/kat-6.jpeg" class="kategori-home6 preview-list-kategori" alt="">
+                <img src="assets/kat-7.jpeg" class="kategori-home7 preview-list-kategori" alt="">
+                <img src="assets/kat-8.jpg" class="kategori-home8 preview-list-kategori" alt="">
+            </div>
+        </div>
+        <div class="area-header-list-kategori">
+            <a href="" kategori-data="kategori1" class="box-header-list-kategori">
+                <div class="hover-header-list-kategori">
+                    <div class="top-header-list-kategori"></div>
+                    <div class="bottom-header-list-kategori"></div>
+                </div>
+                <div class="outer-header-list-kategori">
+                    <h6>01</h6>
+                    <div class="text-header-list-kategori">
+                        <div class="inner-text-header-list-kategori">
+                            <h1>English Competition</h1>
+                            <h1>English Competition</h1>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/up-right-arrow.png" alt="">
+            </a>
+            <a href="" kategori-data="kategori2" class="box-header-list-kategori">
+                <div class="hover-header-list-kategori">
+                    <div class="top-header-list-kategori"></div>
+                    <div class="bottom-header-list-kategori"></div>
+                </div>
+                <div class="outer-header-list-kategori">
+                    <h6>02</h6>
+                    <div class="text-header-list-kategori">
+                        <div class="inner-text-header-list-kategori">
+                            <h1>Housekeeping Competition</h1>
+                            <h1>Housekeeping Competition</h1>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/up-right-arrow.png" alt="">
+            </a>
+            <a href="" kategori-data="kategori3" class="box-header-list-kategori">
+                <div class="hover-header-list-kategori">
+                    <div class="top-header-list-kategori"></div>
+                    <div class="bottom-header-list-kategori"></div>
+                </div>
+                <div class="outer-header-list-kategori">
+                    <h6>03</h6>
+                    <div class="text-header-list-kategori">
+                        <div class="inner-text-header-list-kategori">
+                            <h1>Business Competition</h1>
+                            <h1>Business Competition</h1>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/up-right-arrow.png" alt="">
+            </a>
+            <a href="" kategori-data="kategori4" class="box-header-list-kategori">
+                <div class="hover-header-list-kategori">
+                    <div class="top-header-list-kategori"></div>
+                    <div class="bottom-header-list-kategori"></div>
+                </div>
+                <div class="outer-header-list-kategori">
+                    <h6>04</h6>
+                    <div class="text-header-list-kategori">
+                        <div class="inner-text-header-list-kategori">
+                            <h1>IT Competition</h1>
+                            <h1>IT Competition</h1>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/up-right-arrow.png" alt="">
+            </a>
+            <a href="" kategori-data="kategori5" class="box-header-list-kategori">
+                <div class="hover-header-list-kategori">
+                    <div class="top-header-list-kategori"></div>
+                    <div class="bottom-header-list-kategori"></div>
+                </div>
+                <div class="outer-header-list-kategori">
+                    <h6>05</h6>
+                    <div class="text-header-list-kategori">
+                        <div class="inner-text-header-list-kategori">
+                            <h1>Food & Beverage Competition</h1>
+                            <h1>Food & Beverage Competition</h1>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/up-right-arrow.png" alt="">
+            </a>
+            <a href="" kategori-data="kategori6" class="box-header-list-kategori">
+                <div class="hover-header-list-kategori">
+                    <div class="top-header-list-kategori"></div>
+                    <div class="bottom-header-list-kategori"></div>
+                </div>
+                <div class="outer-header-list-kategori">
+                    <h6>06</h6>
+                    <div class="text-header-list-kategori">
+                        <div class="inner-text-header-list-kategori">
+                            <h1>Front Office Competition</h1>
+                            <h1>Front Office Competition</h1>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/up-right-arrow.png" alt="">
+            </a>
+            <a href="" kategori-data="kategori7" class="box-header-list-kategori">
+                <div class="hover-header-list-kategori">
+                    <div class="top-header-list-kategori"></div>
+                    <div class="bottom-header-list-kategori"></div>
+                </div>
+                <div class="outer-header-list-kategori">
+                    <h6>07</h6>
+                    <div class="text-header-list-kategori">
+                        <div class="inner-text-header-list-kategori">
+                            <h1>Culinary Competition</h1>
+                            <h1>Culinary Competition</h1>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/up-right-arrow.png" alt="">
+            </a>
+            <a href="" kategori-data="kategori8" class="box-header-list-kategori">
+                <div class="hover-header-list-kategori">
+                    <div class="top-header-list-kategori"></div>
+                    <div class="bottom-header-list-kategori"></div>
+                </div>
+                <div class="outer-header-list-kategori">
+                    <h6>08</h6>
+                    <div class="text-header-list-kategori">
+                        <div class="inner-text-header-list-kategori">
+                            <h1>Creative & Digital Marketing Competition</h1>
+                            <h1>Creative & Digital Marketing Competition</h1>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/up-right-arrow.png" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div> -->
 
     <!-- Footer -->
     <footer class="w-full h-full md:min-h-screen bg-black relative overflow-hidden">
@@ -385,11 +603,167 @@
         </div>
     </footer>
     <!-- Footer -->
+    <script src="plugin/jquery.js"></script>
+    <script src="plugin/lenis.min.js"></script>
+    <script src="plugin/gsap.js"></script>
+    <script src="plugin/ScrollTrigger.js"></script>
     <script>
+        gsap.registerPlugin(ScrollTrigger);
+        const lenis = new Lenis()
+        lenis.on('scroll', (e) => {
+        });
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+
+        $(".nav-btn").click(function () {
+            $(".nav-menu").toggleClass("active");
+            $(".nav-btn").toggleClass("active");
+            $(".inner-nav-btn").toggleClass("active");
+        });
+
+        $(".nav-link").mouseenter(function () {
+            $(this).find(".inner-nav-link").addClass("active");
+        });
+
+        $(".nav-link").mouseleave(function () {
+            $(this).find(".inner-nav-link").removeClass("active");
+        });
+
+        $(document).ready(function () {
+            // $('.box-header-list-kategori').on('mousedown', function(event) {
+            //     var $this = $(this);
+            //     var rect = $this[0].getBoundingClientRect();
+            //     var mouseY = event.clientY;
+
+            //     // Menambahkan class berdasarkan arah hover (atas/bawah)
+            //     if (mouseY < rect.top + rect.height / 2) {
+            //         $this.css("transform-origin", "top");
+            //         $this.css("transition", "none");
+            //         $this.removeClass('list-hover-bawah');
+            //         $this.addClass('list-hover-atas');
+            //     } else {
+            //         $this.css("transform-origin", "bottom");
+            //         $this.css("transition", "none");
+            //         $this.removeClass('list-hover-atas');
+            //         $this.addClass('list-hover-bawah');
+            //     }
+            // });
+            let kategoriHoreving = 1;
+
+            $(".box-header-list-kategori").mouseenter(function () {
+                let kategoriData = $(this).attr("kategori-data");
+                kategoriHoreving++
+                $(this).addClass("active");
+                $(this).find("h6").addClass("active");
+                $(this).find("img").attr("src", "assets/up-right-arrow-wh.png");
+                $(this).find(".inner-text-header-list-kategori").addClass("active");
+                $(this).find("img").addClass("active");
+                $(".area-header-list-kategori").addClass("active");
+
+                if (kategoriData == "kategori1") {
+                    $(".preview-list-kategori").removeClass("active");
+                    $(".kategori-home1").addClass("active");
+                    $(".kategori-home1").css("z-index", kategoriHoreving);
+                } else if (kategoriData == "kategori2") {
+                    $(".preview-list-kategori").removeClass("active");
+                    $(".kategori-home2").addClass("active");
+                    $(".kategori-home2").css("z-index", kategoriHoreving);
+                } else if (kategoriData == "kategori3") {
+                    $(".preview-list-kategori").removeClass("active");
+                    $(".kategori-home3").addClass("active");
+                    $(".kategori-home3").css("z-index", kategoriHoreving);
+                } else if (kategoriData == "kategori4") {
+                    $(".preview-list-kategori").removeClass("active");
+                    $(".kategori-home4").addClass("active");
+                    $(".kategori-home4").css("z-index", kategoriHoreving);
+                } else if (kategoriData == "kategori5") {
+                    $(".preview-list-kategori").removeClass("active");
+                    $(".kategori-home5").addClass("active");
+                    $(".kategori-home5").css("z-index", kategoriHoreving);
+                } else if (kategoriData == "kategori6") {
+                    $(".preview-list-kategori").removeClass("active");
+                    $(".kategori-home6").addClass("active");
+                    $(".kategori-home6").css("z-index", kategoriHoreving);
+                } else if (kategoriData == "kategori7") {
+                    $(".preview-list-kategori").removeClass("active");
+                    $(".kategori-home7").addClass("active");
+                    $(".kategori-home7").css("z-index", kategoriHoreving);
+                } else if (kategoriData == "kategori8") {
+                    $(".preview-list-kategori").removeClass("active");
+                    $(".kategori-home8").addClass("active");
+                    $(".kategori-home8").css("z-index", kategoriHoreving);
+                }
+            });
+
+            $(".box-header-list-kategori").mouseleave(function () {
+                $(this).removeClass("active");
+                $(this).find("h6").removeClass("active");
+                $(this).find("img").attr("src", "assets/up-right-arrow.png");
+                $(this).find(".inner-text-header-list-kategori").removeClass("active");
+                $(this).find("img").removeClass("active");
+            });
+
+            $(".top-header-list-kategori").mouseenter(function () {
+                $(this).closest('.box-header-list-kategori').addClass('transition-0s');
+                $(this).closest('.box-header-list-kategori').removeClass('list-before-hover-atas');
+                $(this).closest('.box-header-list-kategori').addClass('list-before-hover-bawah');
+                $(this).closest('.box-header-list-kategori').removeClass('transition-0s');
+                $(this).closest('.box-header-list-kategori').removeClass('list-hover-atas');
+                $(this).closest('.box-header-list-kategori').addClass('list-hover-bawah');
+            });
+
+            $(".bottom-header-list-kategori").mouseenter(function () {
+                $(this).closest('.box-header-list-kategori').addClass('transition-0s');
+                $(this).closest('.box-header-list-kategori').removeClass('list-before-hover-bawah');
+                $(this).closest('.box-header-list-kategori').addClass('list-before-hover-atas');
+                $(this).closest('.box-header-list-kategori').removeClass('transition-0s');
+                $(this).closest('.box-header-list-kategori').removeClass('list-hover-bawah');
+                $(this).closest('.box-header-list-kategori').addClass('list-hover-atas');
+            });
+
+            $(".top-header-list-kategori").mouseleave(function () {
+                $(this).closest('.box-header-list-kategori').addClass('transition-0s');
+                $(this).closest('.box-header-list-kategori').removeClass('list-before-hover-atas');
+                $(this).closest('.box-header-list-kategori').addClass('list-before-hover-bawah');
+                $(this).closest('.box-header-list-kategori').removeClass('list-hover-atas');
+                $(this).closest('.box-header-list-kategori').addClass('list-hover-bawah');
+                $(this).closest('.box-header-list-kategori').removeClass('transition-0s');
+            });
+
+            $(".bottom-header-list-kategori").mouseenter(function () {
+                $(this).closest('.box-header-list-kategori').addClass('transition-0s');
+                $(this).closest('.box-header-list-kategori').removeClass('list-before-hover-bawah');
+                $(this).closest('.box-header-list-kategori').addClass('list-before-hover-atas');
+                $(this).closest('.box-header-list-kategori').removeClass('list-hover-bawah');
+                $(this).closest('.box-header-list-kategori').addClass('list-hover-atas');
+                $(this).closest('.box-header-list-kategori').removeClass('transition-0s');
+            });
+
+            // $('.box-header-list-kategori').on('mouseleave', function() {
+            //     var $this = $(this);
+            //     var rect = $this[0].getBoundingClientRect();
+            //     var mouseY = event.clientY;
+            //     // Menghapus kedua class saat hover selesai
+            //     if (mouseY < rect.top + rect.height / 2) {
+            //         $this.css("transform-origin", "top");
+            //         $this.addClass('list-hover-atas');
+            //         $this.removeClass('list-hover-bawah');
+            //     } else {
+            //         $this.css("transform-origin", "bottom");
+            //         $this.css("transition", "none");
+            //         $this.addClass('list-hover-bawah');
+            //         $this.removeClass('list-hover-atas');
+            //     }
+            // });
+        });
+
         const textWidth = document.querySelector('.running-text span').offsetWidth;
 
         gsap.to(".running-text", {
-            x: `-${textWidth}`, 
+            x: `-${textWidth}`,
             duration: 25,
             ease: "none",
             repeat: -1,
