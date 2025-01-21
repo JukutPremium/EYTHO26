@@ -14,6 +14,13 @@ body {
     background-position: center;
 
 }
+.hero-bg-image-compe {
+    background-image: url('../assets/compres/kat-2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
 
 .jkt-logo-rounded {
     border-radius:0px 0px 15px 0;
